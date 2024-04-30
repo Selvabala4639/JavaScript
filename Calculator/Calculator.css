@@ -1,0 +1,41 @@
+
+.calculator{
+    width: 28%;
+    height: 75%;
+    background-color: darkkhaki;
+    text-align: center;
+    margin: 7.5% auto;
+    border: none;
+    border-radius: 5%;
+}
+.heading{
+    font-size: 46px;
+    font-weight: bold;
+    color:rgb(150, 73, 19);
+}
+.numpad{
+    width: 90%;
+    height: 90%;
+    font-size: 3rem;
+    background-color: rgb(130, 127, 127);
+    color: aliceblue;
+    border: none ;
+    border-radius: 20%;
+}
+
+.clear{
+    width: 25%;
+    font-size: 30px;
+    
+}
+
+.result-screen{
+    width: 90%;
+    height: 90%;
+    font-size: 40px;
+    text-align: right;
+    border: none ;
+    border-radius: 5%;
+    background-color: rgb(235, 231, 226);
+}
+

@@ -1,4 +1,20 @@
-#invalid{
+#data{
+    display: none;
+}
+
+/* #form{
+    display: block;
+} */
+
+.invalid
+{
     color: red;
+    font-size: 0.8rem;
     visibility: hidden;
 }
+
+.data-table{
+    border: 1px solid black;
+    width: 30%;
+}
+
