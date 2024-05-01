@@ -23,16 +23,17 @@ function validate1()
     //     return false;
     // }
     var rowCount = 2;
-    // var firstname = checkFirstName();
-    // var lastName = checkLastName();
-    // var mail = checkmail();
-    //var phone = checkphone();
-    // var gender = checkGender();
-    // var address = checkAddress();
-     //var dob = checkDOB();
-    // var time = checkTime();
+    var firstname = checkFirstName();
+    var lastName = checkLastName();
+    var mail = checkmail();
+    var phone = checkphone();
+    var gender = checkGender();
+     var address = checkAddress();
+     var dob = checkDOB();
+     var time = checkTime();
     var languages = checkLanguages();
-    
+    var interests = checkInterest();
+    //var photo = document.getElementById("photo").value;
     var table = document.getElementById("data");
     
     // var row = table.insertRow(2);
@@ -42,16 +43,18 @@ function validate1()
 
     
     // cell1.innerHTML = "Interests";
-    // cell2.innerHTML = interests[0]+"<br>"+interests[1];
-    // AddRow("FirstName", firstname.value);
-    // AddRow("LastName",lastName.value);
-    // AddRow("MailID",mail.value);
-     //AddRow("Phone",phone.value);
-     //AddRow("Gender",gender);
-    // AddRow("Address", address.value);
-     //AddRow("Date of Birth",dob.value);
-    // AddRow("Time",time.value);
-     AddMultipleData("Languages",languages);
+    //cell2.innerHTML = interests[0]+"<br>"+interests[1];
+    AddRow("FirstName", firstname.value);
+    AddRow("LastName",lastName.value);
+    AddRow("MailID",mail.value);
+    AddRow("Phone",phone.value);
+    AddRow("Gender",gender);
+     AddRow("Address", address.value);
+      AddRow("Date of Birth",dob.value);
+      AddRow("Time",time.value);
+    AddMultipleData("Languages",languages);
+    AddMultipleData("Interests",interests);
+    //AddRow("Profile photo", photo);
     function AddMultipleData(section, userDetail)
     {
         var row = table.insertRow(rowCount);
@@ -75,10 +78,7 @@ function validate1()
         cell2.innerHTML = userDetail;
         rowCount++;
     }
-    // for(var i =0; i<interests.length; i++)
-    // {
-    //     document.write(interests[i].value+"<br>");
-    // }
+    
 
     document.getElementById("form-heading").style.display="none";
     document.getElementById("form").style.display="none";
@@ -156,7 +156,7 @@ function checkphone()
 
 function checkGender()
 {
-    var rad = document.getElementsByName("gender");
+    //var rad = document.getElementsByName("gender");
     var rad1 = document.getElementById("male");
     var rad2 = document.getElementById("female");
     var rad3 = document.getElementById("na");
@@ -229,39 +229,39 @@ function checkLanguages()
     var tamil = document.getElementById("tamil");
     var english = document.getElementById("english");
     var french = document.getElementById("french");
-    var seletedLanguages = [];
-    var flag 
-    for(var i =0; i<3; i++)
-    {
+    var seletedLanguages =[];
+    
+
         if(tamil.checked)
         {
-            seletedLanguages.push(tamil.value);
+            seletedLanguages.push(tamil);
             flag = true;
         }
-        else if(english.checked)
+         if(english.checked)
         {
-            seletedLanguages.push(english.value);
+            seletedLanguages.push(english);
             flag = true;
         }
-        else if(french.checked)
+         if(french.checked)
         {
-            seletedLanguages.push(french.value);
+            seletedLanguages.push(french);
             flag = true;
         }
-    }
-    return seletedLanguages;
+    
+        return seletedLanguages;
 }
 
 function checkInterest()
 {
     var interest = document.getElementById("interest");
-    var seletedInterests = [];
+    var seletedInterests =[];
     for(var i =0; i<interest.length; i++)
     {
         if(interest[i].selected)
         {
-            seletedInterests.push(interest[i].value);
+            seletedInterests.push(interest[i]);
         }
     }
     return seletedInterests;
 }
+
