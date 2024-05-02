@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <script src="JS Files\library.js"></script>
+        <link rel="stylesheet" href="CSS Files\library.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="images\th.jpg" alt="" class="logo">
+            <p class="portal">Library portal</p>
+            <p class="bks">Books</p>
+        </div>
+        <div class="addBook" id="addBook">
+            <h2>Add Book Name</h2>
+            <form action="" >
+                <!-- <span class="invalidData" id="invalidData">Invalid Data provided. Please check again</span> -->
+                <label for="" class="book-details-heading">Category</label>
+                <select name="" id="category" >
+                    <option value="IT" id="it">IT</option>
+                    <option value="ECE" id="ece">ECE</option>
+                    <option value="EEE" id="eee">EEE</option>
+                </select><br>
+                <label for="bookName" class="book-details-heading">Book</label>
+                <input type="text" name="bookName" id="bookName" visibility="visible" onfocusout="checkBookName()" onkeyup="checkBookName()">
+                <label for="" class="valid" >Valid</label>
+                <label for="" class="invalid" >*Invalid</label>
+                <label for="" class="booklength">Book name length should not exceed 50</label>
+                <br>
+
+
+                <label for="email" class="book-details-heading">Author Email</label>
+                <input type="text" name="email" id="email" onfocusout="checkEmail()" onkeyup="checkEmail()">
+                <label for="" class="valid" >Valid</label>
+                <label for="" class="invalid" >*Invalid</label><br>
+
+
+                <label for="authorName" class="book-details-heading">Author Name</label>
+                <input type="text" name="authorName" id="authorName" onfocusout="checkAuthorName()" onkeyup="checkAuthorName()">
+                <label for="" class="valid" >Valid</label>
+                <label for="" class="invalid" >*Invalid</label>
+                <span class="specialChar">Special Character not allowed</span>
+                <label for="" class="authorlength">Author name length should not exceed 50</label><br>
+
+
+                <label for="year" class="book-details-heading">Published Year</label>
+                <input type="text" name="year" id="year" onfocusout="checkYear()" onkeyup="checkYear()">
+                <label for="" class="valid" >Valid</label>
+                <label for="" class="invalid" >Please enter valid Published Year</label><br>
+
+
+                <label for="price" class="book-details-heading">Price</label>
+                <input type="text" name="price" id="price" onfocusout="checkPrice()" onkeyup="checkPrice()">
+                <label for="" class="valid" >Valid</label>
+                <label for="" class="invalid" >*Invalid</label><br>
+                <div class="btns">
+                    <button onclick="return validate()" class="button">Submit</button>
+                <button class="button">Cancel</button>
+                 <button onclick=" return Show()" class="button">Show</button>
+                </div>
+                
+                <!-- <button>Show</button>  -->
+            </form>
+        </div>
+       
+
+        <div class="bookDetails" id="bookDetails">
+            
+            <table class="bookTable" id="bookTable">
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <div class="back" id="back">
+                <button onclick="return Back()">Back</button>
+            </div>  
+        </div>
+        
+
+        <div class="footer">
+            <p>Copyright @2019 - present syncfusion
+            </p>
+        </div>
+    </body>
+</html>

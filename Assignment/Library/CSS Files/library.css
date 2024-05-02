@@ -1,0 +1,73 @@
+
+.book-details-heading{
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+.logo{
+    width: 5%;
+    height: 5%;
+}
+
+.header{
+    display: flex;
+    border: 1px solid black;
+}
+.portal{
+    margin: 1% 2%;
+}
+
+.bks{
+    margin: 1% 2%;
+
+}
+
+.footer{
+    border: 1px solid black;
+}
+
+.addBook{
+    padding: 12% 0;
+    border: 1px solid black;
+}
+.bookDetails{
+    border: 1px solid black;
+    display: none;
+    padding: 13% 0;
+}
+.valid{
+    color: green;
+    visibility: hidden;
+}
+.invalid{
+    color: red;
+    visibility: hidden;
+}
+
+.booklength{
+    color: red;
+    visibility: hidden;
+}
+
+.authorlength{
+    color: red;
+    visibility: hidden;
+}
+
+.specialChar{
+    color: red;
+    visibility: hidden;
+}
+.invalidData{
+    color: red;
+    visibility: hidden;
+}
+
+.btns{
+    margin: 0.5%;
+}
+
+.button{
+    margin: 1%;
+}
